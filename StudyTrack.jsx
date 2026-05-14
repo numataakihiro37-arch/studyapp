@@ -3,8 +3,8 @@ import { useState, useEffect, useCallback } from "react";
 // ============================================================
 // ⚙️ SUPABASE設定 - ここに自分のSupabase URLとAnon Keyを入力
 // ============================================================
-const SUPABASE_URL = "https://znfqsihxmjpodwzfbmns.supabase.co/rest/v1/";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpuZnFzaWh4bWpwb2R3emZibW5zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg2ODIzNjAsImV4cCI6MjA5NDI1ODM2MH0.w8gUUNkCwjDqdiwzIcsNu0RnR0wvHjBQxRT_0N3ocyw";
+const SUPABASE_URL = "https://znfqsihxmjpodwzfbmns.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_t6V7al-rkXL2y4hRVh0XOQ_OdzEvF0K";
 
 async function sbFetch(path, options = {}) {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
